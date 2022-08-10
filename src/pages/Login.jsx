@@ -91,7 +91,7 @@ export default function Login() {
 
   return (
     <>
-      <FormContainer className={back}>
+      <FormContainer className={back}  >
         <form action=""  onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             {/*<img src={Logo} alt="logo" />*/}
@@ -121,25 +121,28 @@ export default function Login() {
   );
 }
 
-const FormContainer = styled.div`
+let FormContainer = styled.div`
+
   height: 100vh;
   width: 100vw;
   display: flex;
   //flex-direction: column;
   justify-content: end;
-  float: right;
+  //float: right;
   gap: 3rem;
   align-items: center;
   //background-color: #131324;
   .brand {
-    margin-bottom: 50px;
+    margin-bottom: 1em;
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: center;
+
     img {
       height: 5rem;
     }
+
     h1 {
       color: white;
       //text-transform: uppercase;
@@ -158,10 +161,11 @@ const FormContainer = styled.div`
     border-radius: 32px;
     padding: 5rem;
     margin-right: 80px;
-    margin-left: 80px ;
+    margin-left: 80px;
   }
+
   input {
-    margin-bottom: 50px;
+    margin-bottom: 15%;
     background-color: #A2F9F1;
     padding: 1rem;
     border: 0.1rem solid #A2F9F1;
@@ -169,13 +173,15 @@ const FormContainer = styled.div`
     color: black;
     width: 100%;
     font-size: 1rem;
+
     &:focus {
       //border: 0.1rem solid #997af0;
       outline: none;
     }
   }
+
   button {
-    margin-bottom: 25px;
+    margin-bottom: 5%;
     background-color: #4e0eff;
     color: white;
     padding: 1rem 2rem;
@@ -186,21 +192,57 @@ const FormContainer = styled.div`
     font-size: 1rem;
     text-transform: uppercase;
     opacity: 1;
+
     &:hover {
       background-color: #7063B3;
     }
   }
+
   span {
-    margin-bottom: 70px;
+    //margin-bottom: 70px;
     color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
+
     a {
-      margin-bottom: 50px;
+      //margin-bottom: max-content;
       color: #4e0eff;
       text-decoration: none;
       font-weight: bold;
     }
   }
+  @media (min-height: 100px) and (max-height: 550px) {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    //float: right;
+    gap: 3rem;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      //gap: 6rem;
+      height: 90%;
+      width: 100%;
+      background: linear-gradient(to right, #8CECE1, #4DBCE9);
+      opacity: 0.9;
+      border-radius: 32px;
+      //padding: 5rem;
+      //margin-right: 80px;
+      //margin-left: 80px;
+    }
+    input {
+      margin-bottom: 5%;
+  }
+    button{
+    margin-bottom: 2%}
+  }
+  h1{
+    margin-top: -50px;
+  }
+
 `;
