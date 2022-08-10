@@ -133,7 +133,8 @@ let FormContainer = styled.div`
   align-items: center;
   //background-color: #131324;
   .brand {
-    margin-bottom: 1em;
+    margin-top: 10px;
+    margin-bottom: 2em;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -154,7 +155,7 @@ let FormContainer = styled.div`
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     //gap: 6rem;
-    height: 70vh;
+    height: 65vh;
     width: 65vh;
     background: linear-gradient(to right, #8CECE1, #4DBCE9);
     opacity: 0.9;
@@ -163,7 +164,6 @@ let FormContainer = styled.div`
     margin-right: 80px;
     margin-left: 80px;
   }
-
   input {
     margin-bottom: 15%;
     background-color: #A2F9F1;
@@ -179,9 +179,8 @@ let FormContainer = styled.div`
       outline: none;
     }
   }
-
   button {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     background-color: #4e0eff;
     color: white;
     padding: 1rem 2rem;
@@ -192,12 +191,10 @@ let FormContainer = styled.div`
     font-size: 1rem;
     text-transform: uppercase;
     opacity: 1;
-
     &:hover {
       background-color: #7063B3;
     }
   }
-
   span {
     //margin-bottom: 70px;
     color: white;
@@ -212,6 +209,8 @@ let FormContainer = styled.div`
       font-weight: bold;
     }
   }
+  
+  
   @media (min-height: 100px) and (max-height: 550px) {
     height: 100vh;
     width: 100vw;
@@ -236,13 +235,14 @@ let FormContainer = styled.div`
       //margin-left: 80px;
     }
     input {
-      margin-bottom: 5%;
+      margin-bottom: 13%;
+      margin-top: -45px;
   }
     button{
-    margin-bottom: 2%}
+      margin-top: -35px;
+    margin-bottom: 3%}
   }
   h1{
-    margin-top: -50px;
+    margin-top: -110px;
   }
-
 `;
