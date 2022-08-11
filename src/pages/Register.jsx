@@ -212,6 +212,7 @@ const FormContainer = styled.div`
   }
   span {
     color: white;
+    margin-top: -20px;
     text-transform: uppercase;
     text-align: center;
     a {
@@ -242,14 +243,25 @@ const FormContainer = styled.div`
       border-radius: 32px;
     }
     input {
-      margin-bottom: 13%;
+      margin-bottom: 5%;
       margin-top: -45px;
+      padding:10px;
     }
     button{
       margin-top: -35px;
-      margin-bottom: 3%}
+    }
   }
   h1{
-    margin-top: -110px;
+    margin-top: -90px;
+  }
+  span {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    a {
+      color: #4e0eff;
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 `;
