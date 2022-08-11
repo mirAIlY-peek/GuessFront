@@ -211,7 +211,7 @@ let FormContainer = styled.div`
   }
   
   
-  @media (min-height: 100px) and (max-height: 550px) {
+  @media (max-width: 1115px) and (max-height: 550px) {
     height: 100vh;
     width: 100vw;
     display: flex;

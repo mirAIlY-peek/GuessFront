@@ -220,4 +220,36 @@ const FormContainer = styled.div`
       font-weight: bold;
     }
   }
+  
+  @media (max-width: 1115px) and (max-height: 550px) {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    //float: right;
+    gap: 3rem;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      //gap: 6rem;
+      height: 90%;
+      width: 100%;
+      background: linear-gradient(to right, #8CECE1, #4DBCE9);
+      opacity: 0.9;
+      border-radius: 32px;
+    }
+    input {
+      margin-bottom: 13%;
+      margin-top: -45px;
+    }
+    button{
+      margin-top: -35px;
+      margin-bottom: 3%}
+  }
+  h1{
+    margin-top: -110px;
+  }
 `;
